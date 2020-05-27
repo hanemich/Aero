@@ -37,7 +37,7 @@ try:
         if guess == 1:
             GPIO.output(gpioList, GPIO.LOW)
         else:
-            GPIO.output(i, GPIO.HIGH)
+            GPIO.output(gpioList, GPIO.HIGH)
 
 # End program cleanly with keyboard
 except KeyboardInterrupt:
