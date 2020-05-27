@@ -33,9 +33,9 @@ sleepTimeLong = 1
 
 try:
     while True:
-        guess = int(input('Enter 1 through 8: '))
-        if int==i in gpioList:
-            GPIO.output(i, GPIO.LOW)
+        guess = int(input('Enter 1 for on or 0 for off: '))
+        if guess == 1:
+            GPIO.output(gpioList, GPIO.LOW)
         else:
             GPIO.output(i, GPIO.HIGH)
 
